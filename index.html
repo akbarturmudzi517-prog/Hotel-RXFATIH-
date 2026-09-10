@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RXFatih | Luxury Hotel & Resort</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Elegant Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">RXFatih</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Video Banner -->
+    <header id="home" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <!-- Placeholder video of a beautiful landscape/resort -->
+            <source src="assets/banner.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Experience Unrivaled Luxury</h1>
+            <p>Welcome to RXFatih. A sanctuary of elegance and gold.</p>
+            <a href="#booking" class="btn-gold">Reserve Your Stay</a>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2>Book Your Experience</h2>
+            <form id="booking-form" class="booking-form">
+                <div class="input-group">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                <div class="input-group">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" required>
+                </div>
+                <div class="input-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-gold" id="submit-btn">Check Availability</button>
+            </form>
+            <!-- Silent success message container -->
+            <p id="form-message" class="hidden-message">Searching for available suites...</p>
+        </div>
+    </section>
+
+    <!-- 10 Landscape Photos Gallery -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Our Magnificent Estate</h2>
+            <div class="gallery-grid">
+                <img src="assets/hr.png" alt="Hotel Exterior">
+                <img src=assets/kt.png alt="Luxury Bedroom">
+                <img src="assets/kr.png" alt="Resort Pool">
+                <img src="assets/resepsionis.png" alt="Lounge Area">
+                <img src="assets/rm.png" alt="Dining Room">
+                <img src="assets/spa.png" alt="Spa and Wellness">
+                <img src="assets/rp.png" alt="Balcony View">
+                <img src="assets/km.png" alt="Suite Bathroom">
+                <img src="assets/pv.png" alt="Hotel Lobby">
+                <img src="assets/rspt.png" alt="Ocean View Landscape">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 RXFatih Hotel & Resort. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
